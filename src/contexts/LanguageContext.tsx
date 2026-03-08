@@ -153,6 +153,31 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "Specialization in telecom systems, data platforms and network technologies. Comprehensive training in signal processing, network architecture, systems administration and software engineering.",
     fr: "Spécialisation en systèmes télécom, plateformes de données et technologies réseau. Formation complète en traitement du signal, architecture réseau, administration systèmes et génie logiciel.",
   },
+  "edu.insa.dates": { en: "2023 - 2026", fr: "2023 - 2026" },
+  "edu.trinity.title": {
+    en: "Trinity College Dublin – School of Engineering",
+    fr: "Trinity College Dublin – School of Engineering",
+  },
+  "edu.trinity.degree": {
+    en: "Exchange Semester",
+    fr: "Semestre d'échange",
+  },
+  "edu.trinity.desc": {
+    en: "International exchange semester at Trinity College Dublin within the School of Engineering and Computer Science. Coursework includes advanced software engineering, computational methods, machine learning and modern distributed systems.",
+    fr: "Semestre d'échange international au Trinity College Dublin au sein de la School of Engineering and Computer Science. Cursus incluant ingénierie logicielle avancée, méthodes de calcul, machine learning et systèmes distribués modernes.",
+  },
+  "edu.trinity.dates": { en: "2025 - 2026", fr: "2025 - 2026" },
+  "edu.iut.title": {
+    en: "IUT Lyon 1 – Université Claude Bernard Lyon 1",
+    fr: "IUT Lyon 1 – Université Claude Bernard Lyon 1",
+  },
+  "edu.iut.degree": { en: "DUT Informatique", fr: "DUT Informatique" },
+  "edu.iut.desc": {
+    en: "Two-year university degree focused on computer science fundamentals including programming, algorithms, databases, software engineering and systems architecture.",
+    fr: "Diplôme universitaire en deux ans axé sur les fondamentaux de l'informatique : programmation, algorithmes, bases de données, ingénierie logicielle et architecture systèmes.",
+  },
+  "edu.iut.dates": { en: "2021 - 2023", fr: "2021 - 2023" },
+  "edu.website": { en: "Official website", fr: "Site officiel" },
 
   // Contact
   "contact.title": { en: "Contact", fr: "Contact" },
