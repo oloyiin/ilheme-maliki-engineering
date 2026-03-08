@@ -14,7 +14,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container max-w-6xl">
-        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 24 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="justify-self-center w-full max-w-sm"
+            className="justify-self-center w-full max-w-md"
           >
             <div className="relative">
               <div className="absolute -inset-3 rounded-2xl bg-gradient-to-br from-accent/30 to-primary/20 blur-xl -z-10" />
@@ -77,7 +77,7 @@ const HeroSection = () => {
                 <img
                   src={`${baseUrl}profile-photo-placeholder.jpeg`}
                   alt="Portrait d'Ilheme Maliki"
-                  className="w-full h-[26rem] object-cover"
+                  className="w-full h-[32rem] object-cover"
                 />
                 <div className="px-4 py-3 border-t border-border bg-background/80 backdrop-blur-sm">
                   <p className="text-sm font-semibold text-foreground">Ilheme Maliki</p>

@@ -34,11 +34,11 @@ const EducationSection = () => {
               className="border border-border rounded-lg p-6 bg-background hover:border-accent/40 transition-colors"
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-14 h-14 rounded-md border border-border bg-secondary overflow-hidden shrink-0">
+                <div className="w-16 h-16 rounded-md border border-border bg-white overflow-hidden shrink-0 p-1.5">
                   <img
                     src={school.logo}
                     alt={`${t(`edu.${school.key}.title`)} logo`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     loading="lazy"
                   />
                 </div>
