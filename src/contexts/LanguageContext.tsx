@@ -201,7 +201,7 @@ const translations: Record<string, Record<Lang, string>> = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("fr");
 
   const toggleLang = () => setLang((l) => (l === "en" ? "fr" : "en"));
 

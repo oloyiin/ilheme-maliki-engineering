@@ -3,8 +3,13 @@ import { ArrowDown, Download, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const baseUrl = import.meta.env.BASE_URL;
+  const cvFileName =
+    lang === "fr"
+      ? "CV Ingénieur_Reseaux_Ilhême_Maliki.pdf"
+      : "Resume_Telecommunication_Network_Engineer_Ilheme_Maliki.pdf";
+  const cvHref = `${baseUrl}CVs/${encodeURIComponent(cvFileName)}`;
 
   return (
     <section className="relative min-h-screen pt-24 pb-16 overflow-hidden">
@@ -44,7 +49,7 @@ const HeroSection = () => {
                 <ArrowDown className="w-4 h-4" />
               </a>
               <a
-                href="/cv-ilheme-maliki.pdf"
+                href={cvHref}
                 download
                 className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-lg text-sm font-semibold hover:bg-secondary transition-colors"
               >
