@@ -33,16 +33,16 @@ const ExperienceSection = () => {
       id: "bpce",
       company: "BPCE IT",
       role: {
-        fr: "Apprentie Ingénieure Télécommunications & Systèmes (Équipes TPR & MDM)",
-        en: "Apprentice Telecommunications & Systems Engineer (TPR & MDM Teams)",
+        fr: "Ingénieure Télécommunications & Systèmes (Équipes TPR & MDM)",
+        en: "Telecommunications & Systems Engineer (TPR & MDM Teams)",
       },
       shortDescription: {
         fr: "Alternance au sein de l'infrastructure IT d'un grand groupe bancaire, autour des systèmes télécom, du monitoring et du pilotage des données opérationnelles.",
         en: "Apprenticeship within a major banking IT infrastructure environment, focused on telecom systems, monitoring, and operational data tooling.",
       },
       period: {
-        fr: "MDM : juin 2024 - décembre 2025 · TPR : janv. 2026 - sept. 2026",
-        en: "MDM: June 2024 - December 2025 · TPR: Jan 2026 - Sept 2026",
+        fr: "MDM : juin 2024 - janv. 2026 · TPR : janv. 2026 - sept. 2026",
+        en: "MDM: June 2024 - Jan 2026 · TPR: Jan 2026 - Sept 2026",
       },
       technologies: [
         "SIP",

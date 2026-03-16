@@ -6,10 +6,8 @@ const HeroSection = () => {
   const { t, lang } = useLang();
   const baseUrl = import.meta.env.BASE_URL;
   const cvFileName =
-    lang === "fr"
-      ? "CV Ingénieur_Reseaux_Ilhême_Maliki.pdf"
-      : "Resume_Telecommunication_Network_Engineer_Ilheme_Maliki.pdf";
-  const cvHref = `${baseUrl}CVs/${encodeURIComponent(cvFileName)}`;
+    lang === "fr" ? "cv-ilheme-maliki-fr.pdf" : "cv-ilheme-maliki-en.pdf";
+  const cvHref = `${baseUrl}CVs/${cvFileName}`;
 
   return (
     <section className="relative min-h-screen pt-24 pb-16 overflow-hidden">
