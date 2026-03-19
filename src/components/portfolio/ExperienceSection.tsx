@@ -90,8 +90,8 @@ const ExperienceSection = () => {
       id: "lx",
       company: "LX Solutions – Vinci Energies",
       role: {
-        fr: "Stage technique – Télécommunications et Réseaux",
-        en: "Technical Internship – Telecommunications and Networks",
+        fr: "Ingénieur Architecture Capteurs & Performance Énergétique - Vinci Energies",
+        en: "Sensors Architecture & Energy Performance Engineer - Vinci Energies",
       },
       shortDescription: {
         fr: "Participation à des activités d'ingénierie télécom et réseau dans un environnement d'infrastructures industrielles.",
@@ -103,12 +103,12 @@ const ExperienceSection = () => {
       },
       technologies: ["Infrastructures réseau", "Systèmes", "Télécommunications"],
       context: {
-        fr: "Contexte: stage orienté découverte terrain des environnements techniques réseau/télécom.",
-        en: "Context: internship focused on hands-on exposure to network and telecom technical environments.",
+        fr: "Contexte: alternance orientée découverte terrain des environnements techniques réseau/télécom et des infrastructures industrielles.",
+        en: "Context: work-study experience focused on hands-on exposure to network/telecom technical environments and industrial infrastructure.",
       },
       details: {
-        fr: "Immersion dans les activités techniques liées aux infrastructures avec un volet support et observation d'architectures systèmes/réseaux.",
-        en: "Immersion in infrastructure-related technical activities with support tasks and exposure to systems/network architecture.",
+        fr: "Alternance avec immersion dans les activités techniques liées aux infrastructures, à l'architecture capteurs et au suivi de la performance énergétique, avec un volet support et observation d'architectures systèmes/réseaux.",
+        en: "Work-study experience involving infrastructure-related technical activities, sensor architecture and energy performance monitoring, with support tasks and exposure to systems/network architecture.",
       },
       responsibilities: {
         fr: [
@@ -129,12 +129,12 @@ const ExperienceSection = () => {
       id: "ngtv",
       company: "NGTV EXPERIENCE",
       role: {
-        fr: "Stage technique – Environnement télécommunications",
-        en: "Technical Internship – Telecommunications Environment",
+        fr: "Stage – Déploiement & Automatisation Systèmes - NGTV EXPERIENCE",
+        en: "Internship – Systems Deployment & Automation - NGTV EXPERIENCE",
       },
       shortDescription: {
-        fr: "Première expérience professionnelle dans un environnement télécom pour découvrir les infrastructures et technologies de télécommunications.",
-        en: "First professional experience in a telecom environment, focused on infrastructure and telecommunications technologies discovery.",
+        fr: "Stage dans un environnement télécom orienté déploiement, automatisation systèmes et montage de matériel.",
+        en: "Internship in a telecom environment focused on systems deployment, automation, and hardware assembly.",
       },
       period: {
         fr: "2022 - 2023",
@@ -142,23 +142,25 @@ const ExperienceSection = () => {
       },
       technologies: ["Systèmes télécom", "Infrastructures télécom"],
       context: {
-        fr: "Contexte: première immersion opérationnelle dans les métiers techniques télécom.",
-        en: "Context: first operational immersion in telecom technical activities.",
+        fr: "Contexte: première immersion opérationnelle dans des activités techniques télécom et systèmes avec intervention sur le matériel.",
+        en: "Context: first operational immersion in telecom and systems technical activities, including hardware work.",
       },
       details: {
-        fr: "Expérience d'introduction aux environnements d'exploitation télécom et aux pratiques d'infrastructure.",
-        en: "Introductory experience to telecom operations environments and infrastructure practices.",
+        fr: "Stage d'introduction aux environnements d'exploitation télécom et aux pratiques d'infrastructure, incluant des tâches de déploiement, d'automatisation systèmes et de montage de matériel.",
+        en: "Introductory internship in telecom operations and infrastructure practices, including deployment, systems automation, and hardware assembly tasks.",
       },
       responsibilities: {
         fr: [
           "Découverte des infrastructures télécom",
           "Immersion dans un environnement opérationnel télécom",
           "Introduction aux technologies de télécommunications",
+          "Montage de matériel",
         ],
         en: [
           "Discovered telecom infrastructures",
           "Immersed in an operational telecom environment",
           "Introduced to telecommunications technologies",
+          "Assembled hardware",
         ],
       },
     },
