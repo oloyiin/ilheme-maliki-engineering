@@ -39,13 +39,13 @@ const ContactSection = () => {
               github.com/oloyiin
             </a>
             <a
-              href="https://www.linkedin.com/in/ilhêmemaliki"
+              href="https://www.linkedin.com/in/ilhememaliki"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Linkedin className="w-4 h-4 text-accent" />
-              linkedin.com/in/ilhêmemaliki
+              linkedin.com/in/ilhememaliki
             </a>
           </div>
 
