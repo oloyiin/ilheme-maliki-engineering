@@ -28,6 +28,30 @@ const translations: Record<string, Record<Lang, string>> = {
   },
   "hero.viewProjects": { en: "View Projects", fr: "Voir les projets" },
   "hero.downloadCV": { en: "Download CV", fr: "Télécharger le CV" },
+  "hero.badge": {
+    en: "Telecommunications · Systems · DevOps",
+    fr: "Télécommunications · Systèmes · DevOps",
+  },
+  "hero.card1.title": { en: "VoIP & Telecom", fr: "VoIP & Télécom" },
+  "hero.card1.desc": {
+    en: "SIP, SIPp, observability",
+    fr: "SIP, SIPp, observabilité",
+  },
+  "hero.card2.title": { en: "Automation", fr: "Automatisation" },
+  "hero.card2.desc": {
+    en: "Power Platform, CI/CD, APIs",
+    fr: "Power Platform, CI/CD, APIs",
+  },
+  "hero.card3.title": { en: "Reliable infra", fr: "Infra fiable" },
+  "hero.card3.desc": {
+    en: "Systems, monitoring, tooling",
+    fr: "Systèmes, supervision, outillage",
+  },
+  "hero.photo.focus": { en: "Focus", fr: "Focus" },
+  "hero.photo.line1": { en: "Telecom systems", fr: "Systèmes télécom" },
+  "hero.photo.line2": { en: "& operational tooling", fr: "& outillage opérationnel" },
+  "hero.photo.caption": { en: "Engineering Portfolio", fr: "Portfolio d'ingénierie" },
+  "hero.photo.status": { en: "Available 2026", fr: "Disponible 2026" },
 
   // About
   "about.title": { en: "About Me", fr: "À propos" },
@@ -35,6 +59,16 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "I am a telecommunications engineering graduate from INSA Lyon, with hands-on experience in systems, networks, monitoring platforms and automation. Through my apprenticeship within a major banking IT infrastructure environment, I have developed strong expertise in VoIP, observability, and operational tooling. I am driven by the desire to build reliable, automated and scalable infrastructure solutions.",
     fr: "Je suis diplômée ingénieure en télécommunications de l'INSA Lyon, avec une expérience pratique en systèmes, réseaux, plateformes de supervision et automatisation. Au travers de mon alternance dans un environnement d'infrastructure IT bancaire majeur, j'ai développé une solide expertise en VoIP, observabilité et outillage opérationnel. Je suis animée par le désir de construire des solutions d'infrastructure fiables, automatisées et scalables.",
   },
+  "about.snapshot": { en: "Profile Snapshot", fr: "Aperçu du profil" },
+  "about.headline": { en: "Telecom + Infra", fr: "Télécom + Infra" },
+  "about.summary": {
+    en: "Clear positioning across systems, networking, monitoring and automation.",
+    fr: "Positionnement clair entre systèmes, réseaux, monitoring et automatisation.",
+  },
+  "about.focus": { en: "Focus", fr: "Focus" },
+  "about.focusValue": { en: "Observability", fr: "Observabilité" },
+  "about.stack": { en: "Stack", fr: "Stack" },
+  "about.stackValue": { en: "VoIP · BI · CI/CD", fr: "VoIP · BI · CI/CD" },
 
   // Experience
   "exp.title": { en: "Experience", fr: "Expérience" },
@@ -95,6 +129,14 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "Simulation and monitoring of telecom calls using SIPp and VoIP environments to test infrastructure reliability and automate telecom validation workflows.",
     fr: "Simulation et supervision d'appels télécom via SIPp et environnements VoIP pour tester la fiabilité de l'infrastructure et automatiser les workflows de validation télécom.",
   },
+  "proj.gns3.title": {
+    en: "GNS3 Cisco Config Generator",
+    fr: "Générateur de Config Cisco GNS3",
+  },
+  "proj.gns3.desc": {
+    en: "Python-based generator that turns a JSON intent file into IPv6 Cisco router configurations with RIPng, OSPFv3, iBGP/eBGP policies and optional Telnet deployment.",
+    fr: "Générateur Python qui transforme un fichier d'intention JSON en configurations Cisco IPv6 avec RIPng, OSPFv3, politiques iBGP/eBGP et déploiement optionnel via Telnet.",
+  },
   "proj.mdm.title": {
     en: "MDM Power Platform Data Platform",
     fr: "Plateforme de Données MDM Power Platform",
@@ -102,6 +144,14 @@ const translations: Record<string, Record<Lang, string>> = {
   "proj.mdm.desc": {
     en: "Internal platform built with Power BI, Power Apps, Dataverse and SharePoint to enable KPI monitoring and data accessibility for operational teams.",
     fr: "Plateforme interne construite avec Power BI, Power Apps, Dataverse et SharePoint pour permettre le suivi des KPI et l'accessibilité des données pour les équipes opérationnelles.",
+  },
+  "proj.morning.title": {
+    en: "Morning Check Telephony Dashboard",
+    fr: "Dashboard Téléphonie Morning Check",
+  },
+  "proj.morning.desc": {
+    en: "End-to-end supervision dashboard for TPR telephony checks, combining a React frontend, FastAPI backend, KPI APIs, retest workflows, and CSV/audio processing for operational visibility.",
+    fr: "Dashboard de supervision bout en bout pour les contrôles téléphonie TPR, combinant frontend React, backend FastAPI, API de KPI, workflows de retest et traitement CSV/audio pour améliorer la visibilité opérationnelle.",
   },
   "proj.studyflow.title": {
     en: "StudyFlow AI Platform",
@@ -111,25 +161,13 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "AI-assisted study platform using a microservices architecture with CI/CD pipeline and backend integration.",
     fr: "Plateforme d'étude assistée par IA utilisant une architecture microservices avec pipeline CI/CD et intégration backend.",
   },
-  "proj.audio.title": {
-    en: "Audio Scene Classification",
-    fr: "Classification de Scènes Audio",
-  },
-  "proj.audio.desc": {
-    en: "Deep learning project using neural networks for environmental sound classification.",
-    fr: "Projet de deep learning utilisant des réseaux de neurones pour la classification de sons environnementaux.",
-  },
-  "proj.cicd.title": {
-    en: "CI/CD Pipeline Implementation",
-    fr: "Implémentation Pipeline CI/CD",
-  },
-  "proj.cicd.desc": {
-    en: "Implementation of continuous integration pipelines with Git-based workflows and automation.",
-    fr: "Implémentation de pipelines d'intégration continue avec des workflows basés sur Git et automatisation.",
-  },
 
   // Skills
   "skills.title": { en: "Skills", fr: "Compétences" },
+  "skills.desc": {
+    en: "A technical profile built around telecom reliability, operational tooling and data visibility.",
+    fr: "Un profil technique construit autour de la fiabilité télécom, de l'outillage opérationnel et de la visibilité des données.",
+  },
   "skills.telecom": {
     en: "Telecommunications & Networking",
     fr: "Télécommunications & Réseaux",
@@ -181,11 +219,16 @@ const translations: Record<string, Record<Lang, string>> = {
 
   // Contact
   "contact.title": { en: "Contact", fr: "Contact" },
+  "contact.badge": { en: "Open to opportunities", fr: "Ouverte aux opportunités" },
   "contact.name": { en: "Name", fr: "Nom" },
   "contact.email": { en: "Email", fr: "Email" },
   "contact.message": { en: "Message", fr: "Message" },
   "contact.send": { en: "Send Message", fr: "Envoyer" },
   "contact.getInTouch": { en: "Get in Touch", fr: "Me contacter" },
+  "contact.response": {
+    en: "Telecom, systems and operational tooling roles",
+    fr: "Postes télécom, systèmes et outillage opérationnel",
+  },
   "contact.desc": {
     en: "Feel free to reach out for collaboration, opportunities or just to connect.",
     fr: "N'hésitez pas à me contacter pour une collaboration, des opportunités ou simplement pour échanger.",

@@ -10,8 +10,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container flex items-center justify-between h-16">
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      <div className="container pt-4">
+        <div className="flex items-center justify-between h-16 px-4 sm:px-5 rounded-full border border-border/70 bg-background/82 backdrop-blur-xl shadow-[0_12px_40px_rgba(33,40,48,0.08)]">
         <a href="#" className="text-lg font-bold tracking-tight text-foreground">
           IM<span className="text-accent">.</span>
         </a>
@@ -29,7 +30,7 @@ const Navbar = () => {
           ))}
           <button
             onClick={toggleLang}
-            className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors border border-border rounded-md px-3 py-1.5"
+            className="flex items-center gap-1.5 text-sm font-medium text-foreground transition-colors border border-accent/20 bg-accent/10 rounded-full px-3.5 py-1.5 hover:bg-accent/15"
           >
             <Globe className="w-3.5 h-3.5" />
             {lang === "en" ? "FR" : "EN"}
@@ -45,6 +46,7 @@ const Navbar = () => {
             {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -54,7 +56,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-b border-border overflow-hidden"
+            className="md:hidden mx-4 mt-2 rounded-3xl bg-background/95 border border-border shadow-[0_12px_30px_rgba(33,40,48,0.08)] overflow-hidden"
           >
             <div className="container py-4 flex flex-col gap-3">
               {navItems.map((item) => (
