@@ -173,7 +173,7 @@ const ExperienceSection = () => {
   const missionLabel = lang === "fr" ? "Description complète" : "Full description";
 
   return (
-    <AnimatedSection id="experience" className="py-24 bg-white">
+    <AnimatedSection id="experience" className="py-24 bg-surface">
       <div className="container max-w-5xl">
         <h2 className="text-2xl font-bold text-foreground mb-10">{t("exp.title")}</h2>
 
@@ -184,9 +184,9 @@ const ExperienceSection = () => {
             {experiences.map((exp) => (
               <article
                 key={exp.id}
-                className="relative md:pl-8 border border-border rounded-xl p-5 bg-background hover:border-accent/40 hover:shadow-sm transition-all"
+                className="relative md:pl-8 border-b border-border py-6"
               >
-                <span className="hidden md:block absolute left-[0.05rem] top-8 w-4 h-4 rounded-full bg-accent/25 border-4 border-white" />
+                <span className="hidden md:block absolute left-[0.05rem] top-8 w-4 h-4 rounded-full bg-accent/25 border-4 border-surface" />
 
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div>

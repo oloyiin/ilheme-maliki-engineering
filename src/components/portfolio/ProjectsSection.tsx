@@ -72,7 +72,7 @@ const ProjectsSection = () => {
           <h2 className="text-3xl font-bold text-foreground">{t("proj.title")}</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-3">
           {projects.map((p, i) => (
             <motion.div
               key={p.key}
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className={`group rounded-[1.75rem] border border-border/80 bg-gradient-to-br ${p.accent} p-6 hover:border-accent/40 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(33,40,48,0.08)] transition-all ${p.span ?? ""}`}
+              className={`group border-t border-border py-8 ${p.span ?? ""}`}
             >
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <div className="rounded-2xl border border-border/70 bg-white/80 p-2.5 shadow-sm">
+                  <div className="p-2 text-accent">
                     <p.icon className="w-4 h-4 text-accent" />
                   </div>
                   {p.github && (
@@ -103,7 +103,7 @@ const ProjectsSection = () => {
                       href={p.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-2xl border border-border/70 bg-white/80 p-2.5 text-muted-foreground hover:text-accent transition-colors"
+                      className="p-2 text-muted-foreground hover:text-accent transition-colors"
                     >
                       <ArrowUpRight className="w-4 h-4" />
                     </a>
@@ -119,7 +119,7 @@ const ProjectsSection = () => {
                 {p.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs font-medium bg-white/85 text-secondary-foreground px-3 py-1.5 rounded-full border border-border/70"
+                    className="text-xs font-medium text-muted-foreground border-l-2 border-accent/30 pl-2 pr-3"
                   >
                     {tag}
                   </span>
@@ -133,7 +133,7 @@ const ProjectsSection = () => {
                     lang === "fr" ? "Traitement CSV/audio pour les contrôles téléphonie" : "CSV and audio processing for telephony checks",
                     lang === "fr" ? "Dashboard React avec retest et visibilité opérationnelle" : "React dashboard with retest workflows and operational visibility",
                   ].map((item) => (
-                    <div key={item} className="rounded-2xl border border-border/70 bg-white/70 px-4 py-3 text-xs text-muted-foreground leading-6">
+                    <div key={item} className="border-l border-border pl-4 text-sm text-muted-foreground leading-6">
                       {item}
                     </div>
                   ))}

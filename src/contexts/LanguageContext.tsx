@@ -19,6 +19,12 @@ const translations: Record<string, Record<Lang, string>> = {
   "proj.cilab.desc": {"fr":"Pipeline de laboratoire : lint Python, tests avec couverture, analyse SonarQube, construction et publication d’une image Docker, puis déploiement Kubernetes via Helm. Le chart inclut un autoscaler et un ServiceMonitor.","en":"Lab pipeline covering Python linting, coverage tests, SonarQube analysis, Docker image build and registry push, then Kubernetes deployment through Helm. The chart includes an autoscaler and a ServiceMonitor."},
   "proj.opslab.title": {"fr":"Ops KPI Lab · déploiement avec Ansible","en":"Ops KPI Lab · Ansible deployment"},
   "proj.opslab.desc": {"fr":"API FastAPI de démonstration exposant un contrôle de santé et des KPI simulés. Conteneurisation Docker et rôles Ansible pour déployer l’application et un agent de supervision, avec des configurations de développement et de production.","en":"Demo FastAPI service exposing a health check and simulated operational KPIs. Docker packaging and Ansible roles deploy the application and a monitoring agent with development and production configurations."},
+  "skills.item.TelecomMonitoring": {"en":"Telecom Monitoring","fr":"Supervision télécom"},
+  "skills.item.WindowsInfrastructure": {"en":"Windows Infrastructure","fr":"Infrastructure Windows"},
+  "skills.item.SystemAdministration": {"en":"System Administration","fr":"Administration systèmes"},
+  "skills.item.NetworkingFundamentals": {"en":"Networking Fundamentals","fr":"Fondamentaux des réseaux"},
+  "skills.item.Automation": {"en":"Automation","fr":"Automatisation"},
+  "skills.item.Dashboards": {"en":"Dashboards","fr":"Tableaux de bord"},
   // Nav
   "nav.about": { en: "About", fr: "À propos" },
   "nav.experience": { en: "Experience", fr: "Expérience" },
@@ -236,8 +242,8 @@ const translations: Record<string, Record<Lang, string>> = {
   "contact.send": { en: "Send Message", fr: "Envoyer" },
   "contact.getInTouch": { en: "Get in Touch", fr: "Me contacter" },
   "contact.response": {
-    en: "Telecom, systems and operational tooling roles",
-    fr: "Postes télécom, systèmes et outillage opérationnel",
+    en: "Production Engineer · DevOps · SRE",
+    fr: "Ingénieure de production · DevOps · SRE",
   },
   "contact.desc": {
     en: "Feel free to reach out for collaboration, opportunities or just to connect.",
