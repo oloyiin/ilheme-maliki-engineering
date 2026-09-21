@@ -9,6 +9,16 @@ interface LanguageContextType {
 }
 
 const translations: Record<string, Record<Lang, string>> = {
+  "cert.title": {"fr":"Badges et formations complémentaires","en":"Badges and additional training"},
+  "cert.ccna": {"fr":"CCNA: Introduction to Networks","en":"CCNA: Introduction to Networks"},
+  "cert.issuer": {"fr":"Cisco Networking Academy · 18 septembre 2026","en":"Cisco Networking Academy · September 18, 2026"},
+  "cert.desc": {"fr":"Formation Introduction to Networks du parcours CCNA, suivie auprès d’ICTGlobal et validée par un badge numérique.","en":"Introduction to Networks course in the CCNA curriculum, completed through ICTGlobal and recognized with a digital badge."},
+  "cert.link": {"fr":"Voir mon badge sur Credly","en":"View my badge on Credly"},
+  "proj.selected": {"fr":"Sélection de projets","en":"Selected projects"},
+  "proj.cilab.title": {"fr":"Laboratoire GitLab CI et Kubernetes","en":"GitLab CI and Kubernetes lab"},
+  "proj.cilab.desc": {"fr":"Pipeline de laboratoire : lint Python, tests avec couverture, analyse SonarQube, construction et publication d’une image Docker, puis déploiement Kubernetes via Helm. Le chart inclut un autoscaler et un ServiceMonitor.","en":"Lab pipeline covering Python linting, coverage tests, SonarQube analysis, Docker image build and registry push, then Kubernetes deployment through Helm. The chart includes an autoscaler and a ServiceMonitor."},
+  "proj.opslab.title": {"fr":"Ops KPI Lab · déploiement avec Ansible","en":"Ops KPI Lab · Ansible deployment"},
+  "proj.opslab.desc": {"fr":"API FastAPI de démonstration exposant un contrôle de santé et des KPI simulés. Conteneurisation Docker et rôles Ansible pour déployer l’application et un agent de supervision, avec des configurations de développement et de production.","en":"Demo FastAPI service exposing a health check and simulated operational KPIs. Docker packaging and Ansible roles deploy the application and a monitoring agent with development and production configurations."},
   // Nav
   "nav.about": { en: "About", fr: "À propos" },
   "nav.experience": { en: "Experience", fr: "Expérience" },

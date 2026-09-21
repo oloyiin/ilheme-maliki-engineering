@@ -27,6 +27,16 @@ const EducationSection = () => {
     <AnimatedSection id="education" className="py-24">
       <div className="container max-w-5xl">
         <h2 className="text-2xl font-bold text-foreground mb-10">{t("edu.title")}</h2>
+        <section aria-labelledby="certifications-title" className="mb-12 border-l-2 border-accent pl-5 sm:pl-6">
+          <h3 id="certifications-title" className="text-sm font-medium text-muted-foreground mb-3">{t("cert.title")}</h3>
+          <img src={`${baseUrl}ccna-introduction-to-networks.png`} alt="Cisco CCNA: Introduction to Networks" width={112} height={112} loading="lazy" className="w-28 h-28 object-contain mb-4" />
+          <p className="text-xl font-semibold">{t("cert.ccna")}</p>
+          <p className="text-sm text-muted-foreground mt-2">{t("cert.issuer")}</p>
+          <p className="text-sm text-muted-foreground leading-7 mt-3 max-w-2xl">{t("cert.desc")}</p>
+          <a href="https://www.credly.com/badges/05d007c5-9dc9-445c-9345-5d65863f956a/public_url" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium text-sm mt-4 underline underline-offset-4 hover:text-accent">
+            {t("cert.link")}<ExternalLink className="w-4 h-4" aria-hidden="true" />
+          </a>
+        </section>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
           {schools.map((school) => (
             <article

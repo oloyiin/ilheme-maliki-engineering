@@ -17,6 +17,20 @@ const ProjectsSection = () => {
       accent: "from-accent/15 via-white to-primary/10",
     },
     {
+      key: "cilab",
+      tags: ["GitLab CI", "Docker", "Kubernetes", "Helm", "SonarQube"],
+      meta: lang === "fr" ? "Laboratoire DevOps" : "DevOps lab",
+      icon: Blocks,
+      accent: "from-primary/10 via-white to-secondary",
+    },
+    {
+      key: "opslab",
+      tags: ["FastAPI", "Docker", "Ansible", "Node Exporter"],
+      meta: lang === "fr" ? "Automatisation & supervision" : "Automation & monitoring",
+      icon: ServerCog,
+      accent: "from-secondary via-white to-accent/10",
+    },
+    {
       key: "telecom",
       tags: ["SIPp", "VoIP", "Monitoring"],
       meta: lang === "fr" ? "Validation télécom" : "Telecom validation",
@@ -25,6 +39,7 @@ const ProjectsSection = () => {
     },
     {
       key: "gns3",
+      github: "https://github.com/oloyiin/gns3",
       tags: ["Python", "IPv6", "OSPFv3", "BGP", "Telnet"],
       meta: lang === "fr" ? "Réseaux & automatisation" : "Networks & automation",
       icon: Router,
@@ -40,7 +55,7 @@ const ProjectsSection = () => {
     {
       key: "studyflow",
       tags: ["React", "Spring Boot", "Supabase", "OpenAI"],
-      github: "https://github.com/oloyiin",
+      github: "https://github.com/oloyiin/learn_ai",
       meta: lang === "fr" ? "Plateforme IA" : "AI platform",
       icon: Blocks,
       accent: "from-accent/10 via-white to-secondary",
@@ -52,7 +67,7 @@ const ProjectsSection = () => {
       <div className="container max-w-5xl">
         <div className="flex flex-col gap-3 mb-10">
           <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-            Selected Work
+            {t("proj.selected")}
           </p>
           <h2 className="text-3xl font-bold text-foreground">{t("proj.title")}</h2>
         </div>
@@ -84,6 +99,7 @@ const ProjectsSection = () => {
                   </div>
                   {p.github && (
                     <a
+                      aria-label={`${lang === "fr" ? "Voir le code de" : "View source for"} ${t(`proj.${p.key}.title`)}`}
                       href={p.github}
                       target="_blank"
                       rel="noopener noreferrer"
