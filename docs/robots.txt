@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oloyiin.github.io/ilheme-maliki-engineering/sitemap.xml
